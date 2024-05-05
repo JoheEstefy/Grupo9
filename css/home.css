@@ -1,13 +1,15 @@
 
+body {
 
-body{
     width: 100%;
     height: 100%;
-    background-color:#CDE8E5;
+    background-color: #CDE8E5;
+    overflow-x: hidden;
 }
 
 a {
-    text-decoration: none; /*quita lo subrayado de los a*/
+    text-decoration: none;
+    /*quita lo subrayado de los a*/
 }
 
 header {
@@ -32,11 +34,12 @@ header img {
     box-shadow: 3px 3px 3px black;
 
 }
+
 .buton:hover {
     background-color: #EEF7FF;
-    color:black;
+    color: black;
     border-top-right-radius: 20px;
-    transition: 0,1s all;
+    transition: 0, 1s all;
 }
 
 nav {
@@ -46,26 +49,53 @@ nav {
 }
 
 
-nav ul{
-    list-style-type: none; /*quita los puntitos de las listas*/
+nav ul {
+    list-style-type: none;
+    /*quita los puntitos de las listas*/
     display: flex;
 
 }
 
 
-
 #idiomas {
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+
 }
 
 
-.imgHome{
+
+.imgHome {
     width: 50%;
     height: 50%;
-    
-  
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+
 }
 
+footer {
+    background-color:#4D869C;
+    color: #FFF3C7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer .redes {
+    font-size: 2em;
+
+}
+
+footer .redes i {
+    color: blue;
+}
+
+footer .redes i:hover {
+    color: white;
+}
